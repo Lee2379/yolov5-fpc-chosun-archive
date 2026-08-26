@@ -1,6 +1,6 @@
 # Business-Driven AI and Data Science for the Large-Scale Chosun Ilbo Archive
 
-**Language:** English | [日本語](README.ja.md)
+**Language:** English | [日本語](japanese-readme.md)
 
 > **As the first author**, I published this work in a data science journal indexed in ESCI and Scopus. Through an R&D industry-academia collaboration between KAIST and Chosun Ilbo Media Institute, I developed an AI data science foundation for automatically detecting and structuring four-panel cartoons hidden inside a large-scale newspaper archive, turning the results into searchable data assets, a reusable YOLOv5_FPC detector, Chosun Ilbo News Library public service value, book publication, and downstream IP business output. From problem definition to data collection, labeling, YOLOv5 fine-tuning, AI model evaluation, large-scale inference, database construction, and public-service implementation, I led and implemented the end-to-end AI workflow.
 
@@ -200,4 +200,4 @@ The research was conducted as a KAIST master's R&D industry project with Chosun 
 
 ## Japanese Summary
 
-Japanese version: [README.ja.md](README.ja.md).
+Japanese version: [japanese-readme.md](japanese-readme.md).
