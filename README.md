@@ -4,11 +4,19 @@
 
 > **As the first author**, I published this work in a data science journal indexed in ESCI and Scopus. Through an R&D industry-academia collaboration between KAIST and Chosun Ilbo Media Institute, I developed an AI data science foundation for automatically detecting and structuring four-panel cartoons hidden inside a large-scale newspaper archive, turning the results into searchable data assets, a reusable YOLOv5_FPC detector, Chosun Ilbo News Library public service value, book publication, and downstream IP business output. From problem definition to data collection, labeling, YOLOv5 fine-tuning, AI model evaluation, large-scale inference, database construction, and public-service implementation, I led and implemented the end-to-end AI workflow.
 
+## Project summary
+
+- **Problem:** Four-panel cartoons were embedded inside tens of thousands of historical newspaper scans and could not be searched or curated at archive scale by hand.
+- **What I built:** A labeled dataset, a YOLOv5 model adapted to 4x1 and 2x2 cartoon layouts, a batch detector, and curated metadata that linked detections back to archive pages.
+- **Result:** The model was applied to **47,777** newspaper images and found **1,040** cartoon objects in **1,035** files. The work led to a first-author paper, public datasets, a News Library service, and book/IP output.
+- **My role:** I led problem definition, archive collection, labeling, model training and evaluation, large-scale inference, metadata/database work, the reusable detector, analysis, visualization, and first-author writing.
+- **Review or run:** Read the [paper](https://openhumanitiesdata.metajnl.com/articles/10.5334/johd.205), inspect the [public datasets and service links](#links), or run the [YOLOv5_FPC demo](src/yolov5_fpc_inference_demo.py).
+
 ## 日本語概要
 
 **第一著者として**、国際データサイエンス分野の英文学術誌（ESCI・Scopus収録）に論文が掲載され、大手メディア企業との産学連携プロジェクトを通じて、AIモデル開発、朝鮮日報ニュースライブラリにおける漫画公開サービスの構築、さらに書籍出版およびIPビジネスへと展開した、実ビジネス直結型のAIデータサイエンスプロジェクトです。  
 KAISTとChosun Ilbo Media InstituteによるR&D産学連携プロジェクトとして、大規模な新聞アーカイブに埋もれた四コマ漫画を自動検出・構造化し、検索可能なデータ資産として活用できるAIデータサイエンス基盤を構築しました。  
-本プロジェクトでは、課題定義からデータ収集、ラベリング、AIモデル学習、既存のYOLOv5をファインチューニングした四コマ漫画検出特化型YOLOv5_FPCモデルの開発、AIモデル評価、大規模推論、データベース構築、公開サービス実装まで、End-to-EndのAIワークフロー全体を主導して設計・実装しました。
+本プロジェクトでは、課題定義からデータ収集、ラベリング、AIモデル学習、既存のYOLOv5をファインチューニングした四コマ漫画検出特化型YOLOv5_FPCモデルの開発、AIモデル評価、大規模推論、データベース構築、公開サービス実装まで、AIワークフロー全体を主導して設計・実装しました。
 
 ![Published paper title page](assets/paper-title.jpg)
 
@@ -20,7 +28,7 @@ This repository presents a professional case study of my first-author English jo
 
 **Lee, S., Kim, B., & Jun, B. G. (2024). Automatic Detection of Four-Panel Cartoon in Large-Scale Korean Digitized Newspapers using Deep Learning. Journal of Open Humanities Data, 10:36. DOI: [10.5334/johd.205](https://doi.org/10.5334/johd.205).**
 
-The project was conducted as an **R&D industry collaboration with Chosun Ilbo Media Institute during my master's program at KAIST**. The business challenge was driven by rising demand for cartoon content in East Asia: Chosun Ilbo wanted to explore new archive-based business and service opportunities by finding four-panel cartoons hidden inside its massive historical newspaper database, but the starting point was unclear because the target content was embedded in unstructured scanned pages and difficult to detect manually or programmatically. I owned the work end-to-end: clarifying the ambiguous business/research problem, converting it into a business, data science, and AI workflow, collecting and labeling FPC training data, developing the YOLOv5_FPC model through YOLOv5 fine-tuning, evaluating the AI model, running large-scale detection, curating the metadata/database, building a reusable detector script, and communicating the result through a first-author publication.
+The project was conducted as an **R&D industry collaboration with Chosun Ilbo Media Institute during my master's program at KAIST**. The business challenge was driven by rising demand for cartoon content in East Asia: Chosun Ilbo wanted to explore new archive-based business and service opportunities by finding four-panel cartoons hidden inside its massive historical newspaper database, but the starting point was unclear because the target content was embedded in unstructured scanned pages and difficult to detect manually or programmatically. I owned the full workflow: clarifying the ambiguous business/research problem, collecting and labeling FPC training data, fine-tuning and evaluating YOLOv5_FPC, running large-scale detection, curating the metadata/database, building a reusable detector script, and communicating the result through a first-author publication.
 
 | Area | Result |
 | --- | --- |
@@ -54,7 +62,7 @@ The practical challenge was not just training a model. The real problem was buil
 
 ![47,777 archive images collected from Chosun Ilbo News Library](assets/archive-scale-47777-images.jpg)
 
-## My End-to-End Ownership
+## My role and contributions
 
 I led the technical and analytical work across the full lifecycle:
 
@@ -73,9 +81,9 @@ I led the technical and analytical work across the full lifecycle:
 
 ![Author contribution statement](assets/author-contribution.jpg)
 
-## End-to-End Delivery Flow
+## Delivery flow
 
-<img src="assets/system-workflow.svg" alt="End-to-end YOLOv5_FPC workflow from archive image collection to detector, curated data, publication, and business impact" width="100%">
+<img src="assets/system-workflow.svg" alt="YOLOv5_FPC workflow from archive image collection to detector, curated data, publication, and business impact" width="100%">
 
 ## Technical Challenge
 
